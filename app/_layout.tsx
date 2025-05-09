@@ -1,9 +1,13 @@
 // app/_layout.tsx
 import { Stack } from 'expo-router';
 import React from 'react';
+import BottomNavBar from '../components/BottomNavBar';
 
 export default function Layout() {
-  return <Stack screenOptions={{ headerShown: false }} initialRouteName="homescreen"
-
-  />;
+  return (
+    <>
+      <Stack />
+      <BottomNavBar />
+    </>
+  );
 }
